@@ -5,11 +5,9 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
-
 const authRouter = require("./routes/auth");
 const roomRouter = require("./routes/room");
 const videoRouter = require("./routes/videoRouter");
-
 const constants = require("./utils/constants");
 
 mongoose.connect(
